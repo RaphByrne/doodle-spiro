@@ -28,9 +28,41 @@ Polygon.prototype =
 		}
 		context.fill();
 		context.restore();
+	},
+	
+	translate(x, y)
+	{
+		this.translation.x += x;
+		this.translation.y += y;
+	},
+	
+	rotate(angle)
+	{
+		this.angle += angle;
+	},
+	
+	scale(x, y)
+	{
+		this.scale.x *= scale;
+		this.scale.y *= scale;
+	},
+	
+	moveTo(x, y)
+	{
+		this.translation.x = x;
+		this.translation.y = y;
+	},
+	
+	setRotation(angle)
+	{
+		this.rotation = angle;
+	},
+	
+	setScale(x, y)
+	{
+		this.scale.x = x;
+		this.scale.y = y;
 	}
-	
-	
 	
 };
 
